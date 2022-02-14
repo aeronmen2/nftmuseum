@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>aeronmen design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/6ac24bc915.js" crossorigin="anonymous"></script>
+    <script src="https://www.w3schools.com/lib/w3data.js"> </script>
+  </head>
+<body>
+
+<!-- Appel du menu HTLM grâce au script w3schools en javascript -->
+  <div w3-include-html="menu.html">
+    <script> 
+    w3IncludeHTML(); 
+    </script> 
+    </div>
+
+<!-- Formulaire de contact HTML -->
+<div id="formulaire">
+<section class="barre">
+  <form action="contactok.html">
+    <div class="utilisateur">
+      <h1>Contactez-moi !</h1>
+      <p>Des renseignements, un projet, une idée ?</p>
+
+          <section class="prenom">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom">
+          </section>
+
+          <section class="nom">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom">
+          </section>
+
+          <section class="email">
+            <label for="email">E-mail :</label>
+            <input type="text" name="email" id="email">
+          </section>
+
+          <section class="info">
+            <label for="info">Vos idées :</label>
+            <br>
+            <textarea id="info" name="info" rows="3" cols="40"></textarea>
+          </section>
+
+          <section class="contact">
+            <span>Avez-vous déjà utilisé des logiciels de design ?</span>
+            <br>
+            <input type="radio" name="contact" id="oui" value="oui">
+            <label for="oui">Oui</label>
+            <input type="radio" name="contact" id="non" value="non">
+            <label for="non">Non</label>
+          </section>
+
+          <section class="logiciels">
+            <span>Si oui, lesquel(s) ?</span>
+            <br>
+            <input type="checkbox" name="logiciels" id="photoshop" value="photoshop">
+            <label for="photoshop">Photoshop</label>
+            <input type="checkbox" name="logiciels" id="illustrator" value="illustrator">
+            <label for="illustator">Illustator</label>
+            <input type="checkbox" name="logiciels" id="cinema4d" value="cinema4d">
+            <label for="cinema4d">Cinema 4D</label>
+          </section>
+
+          <section class="submission">
+          <input type="submit" value="envoyer">
+          </section>
+    </div>
+  </form>
+</section>
+</div>
+
+<!-- Appel du footer HTLM grâce au script w3schools en javascript -->
+  <div w3-include-html="footer.html">
+    <script> 
+    w3IncludeHTML(); 
+    </script> 
+  </div>
+
+  </body>
+</html>

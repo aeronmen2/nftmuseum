@@ -1,0 +1,330 @@
+/* paramètres pour la page html */
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: "Varela Round", sans-serif;
+}
+
+/* paramètres pour le body html */
+body {
+  padding: 25px;
+  background-color: thistle;
+}
+
+/* appel de plusieurs polices d'écritures */
+@font-face{
+  font-family: "Varela Round", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap")
+ }
+
+/* réglages du menu */
+header.header{
+  display: flex; /* afficher le menu + l'image sur la même ligne*/
+  align-items: center; /* tout aligner ensemble */
+  padding-bottom: 25px; /* espace entre le menu et ce qu'il y'a en dessous */
+}
+
+nav.nav{
+  display: flex; /* affiche le menu sur une barre */
+  list-style: none; /* enlever les puces */
+  margin-left: 30px; /* espace a gauche entre le logo et l'accueil*/
+}
+
+nav.nav li a{
+  border-style:solid;
+  border-color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: none; /* permet de retirer les décoration de texte */
+  margin: 10px;
+  padding: 5px 15px;
+  border-width: 4px;
+  border-radius: 50px;
+  transition:0.8s;
+  text-transform: uppercase; /* mettre en majuscule les différents titres */
+  font-weight: bold;
+}
+
+/* changer paramètres lors du passage de la souris au dessus des boutons */
+nav.nav li a:hover{
+  color:thistle;
+  background: #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff; /* effet "lumière ombre après passage de souris */
+}
+
+header.header img{
+  width: 200px; /* taille du logo */
+}
+
+
+/* formlaire html */
+
+form {
+  color: #ffffff;
+  margin: auto;
+  width: 25%;
+  padding: 10px;
+  border-style:solid;
+  border-color:rgb(255, 255, 255);
+  border-width: 4px;
+  border-radius: 50px;
+  margin : auto; /* permet de centrer le formulaire */
+}
+
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.portofolio table {
+  border-style:solid;
+  border-color:rgb(255, 255, 255);
+  border-width: 4px;
+  border-radius: 50px;
+  margin: auto;
+  padding: 25px;
+  transition: 1.8s;
+  padding:auto;
+}
+
+.portofolio table img{
+  border-radius: 2%; /* côté rond des images */
+  transition: 0.3s;
+}
+
+/* changer paramètres lors du passage de la souris au dessus du tableau d'image */
+.portofolio table:hover{
+  box-shadow: 0 0 15px #ffffff, 0 0 15px #ffffff; 
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: 1.8s
+}
+
+/* changer paramètres lors du passage de la souris au dessus des images : agrandissement + couleur ombre externer et changement des bords */
+.portofolio table img:hover{
+  transform: scale(1.40);
+  cursor: pointer;
+  transition: 500ms;
+  box-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff; 
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+.utilisateur h1{
+text-transform: uppercase;
+text-align: center;
+}
+
+.utilisateur {
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+/* bouton envoi du formulaire + animation */
+input[type=submit] {
+  border-style:solid ;
+  border-color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 5px 15px;
+  border-width: 4px;
+  border-radius: 50px;
+  transition:0.8s;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  display: block;
+  margin : auto;
+}
+
+/* changer paramètres lors du passage de la souris au dessus du boutons */
+input[type=submit]:hover {
+  color:thistle;
+  background: #ffffff;
+  box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff; 
+}
+
+
+/* réglages des icone (taille, couleur et effet lors du passage de souris)*/
+.fa-twitter{
+  color: white;
+  font-size: 40px;
+  overflow: hidden;
+}
+.fa-youtube{
+  color: white;
+  font-size: 40px;
+}
+.fa-instagram{
+  color: white;
+  font-size: 40px;
+}
+
+.fa-twitter:hover{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  transition: 1.1s;
+}
+.fa-youtube:hover{
+  color: white;
+  font-size: 40px;
+  transition: 1.1s;
+}
+.fa-instagram:hover{
+  color: white;
+  font-size: 40px;
+  transition: 1.1s;
+}
+
+/* retirer les puces pour les li de la page */
+li{
+  list-style: none;
+}
+
+/* réglages du footer */
+footer.footer {
+  background-color: rgba(255, 255, 255, 0.219);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  height: 100px;
+  padding-left: 1%;
+  width: 99%;
+}
+
+nav.reseauxsociaux{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav.reseauxsociaux li a{
+  margin: 10px;
+  padding: 5px 15px;
+}
+
+nav.reseauxsociaux li a:hover{
+  margin: 10px;
+  padding: 5px 15px;
+}
+
+/* page boutique */
+h1.offre{
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.tableprix{
+  text-align: center;
+}
+  
+.solotable{
+    display: inline-block;
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+    border-style:solid;
+    border-color:rgb(255, 255, 255);
+    border-width: 4px;
+    border-radius: 50px;
+    margin: auto;
+    padding: 25px;
+    color: white;
+    transition: 0.2s;
+  }
+  
+/* changer paramètres lors du passage de la souris au dessus d'une offre */
+.solotable:hover{
+  cursor: pointer;
+  transition: 500ms;
+  box-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff; 
+  transform: scale(1.10);
+  background-color: thistle;
+}
+
+.solotable h2{
+  text-transform: uppercase;
+}
+
+.liste{
+  display: inline-block;
+  margin: auto;
+  padding: 25px;
+}
+
+
+.tableprix i{
+  font-size: 100px;
+}    
+
+h3.prix{
+  font-size: 60px;
+}
+
+div.index td img{
+  transition: 500ms;
+  box-shadow: 0 0 10px #ffffff, 0 0 15px #ffffff; 
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+div.index{
+ float: right;
+}
+
+
+div.body h1{
+  color: white;
+  font-size:70px;
+}
+
+.body.texte1{
+  position: absolute;
+  margin: auto;
+}
+
+
+div.titre{
+ color: white;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin-left: 340px;
+}
+
+.titre h1{
+  font-size: 45px;  
+  text-transform: uppercase;
+}
+
+.titre img{
+  width: 450px;
+  padding-left: 25px;
+}
+
+
+.droite{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-right: none;
+}
+
+p.texte{
+  color: white;
+  float: left;
+  width: 40%;
+  font-size: 27px;
+}
+
+h1.titre{  color: white;}
+
